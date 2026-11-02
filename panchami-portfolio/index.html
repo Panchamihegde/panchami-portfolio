@@ -1,0 +1,1046 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Panchami Hegde - Aspiring Software Engineer, Python Developer, and AI Engineer. Computer Engineering student at K.C. College of Engineering, Mumbai University." />
+  <meta name="keywords" content="Panchami Hegde, Aspiring Software Engineer, Python Developer, AI Engineer, Generative AI, FastAPI, Machine Learning, Computer Engineering, K.C. College of Engineering, Portfolio" />
+  <meta name="author" content="Panchami Hegde" />
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:title" content="Panchami Hegde | Aspiring Software Engineer | Python | AI" />
+  <meta property="og:description" content="Final-year Computer Engineering student skilled in Python, Artificial Intelligence, SQL, and Web Development with experience in backend systems and Generative AI." />
+  <meta property="og:type" content="website" />
+
+  <title>Panchami Hegde | Aspiring Software Engineer | Python | AI</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Background Ambient Glow Effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo" aria-label="Panchami Hegde Portfolio">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Panchami</span>
+        <span class="logo-accent">.dev</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Main Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#research" class="nav-link">Research</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Nav Actions (Theme Toggle & Resume Download) -->
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon moon-icon"></i>
+          <i class="fa-solid fa-sun sun-icon"></i>
+        </button>
+
+        <!-- Direct Resume Download Button -->
+        <a href="assets/documents/Panchami_Hegde_Resume.pdf" download="Panchami_Hegde_Resume.pdf" class="btn btn-outline btn-sm nav-resume-btn" title="Download Resume PDF">
+          <i class="fa-solid fa-file-arrow-down"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Hamburger Menu Button -->
+        <button id="hamburger-btn" class="hamburger-btn" aria-label="Open Mobile Menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="home">
+      <div class="container hero-container">
+        
+        <!-- Left: Hero Content -->
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>Aspiring Software Engineer • Python | AI</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="greeting">Hello, I'm</span>
+            <span class="name-gradient">Panchami Hegde</span>
+          </h1>
+
+          <h2 class="hero-subtitle">
+            I am an <span class="typing-text" id="typing-text"></span><span class="cursor">&nbsp;</span>
+          </h2>
+
+          <p class="hero-description">
+            Final-year Computer Engineering student skilled in <strong>Python</strong>, <strong>Artificial Intelligence</strong>, 
+            <strong>SQL</strong>, and <strong>Web Development</strong>, with hands-on experience in <strong>backend development</strong>, 
+            <strong>Generative AI</strong>, and building <strong>intelligent applications</strong>. Driven to solve complex real-world challenges 
+            through clean, scalable, and impactful software.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-layer-group"></i>
+              <span>View Projects</span>
+            </a>
+            <a href="assets/documents/Panchami_Hegde_Resume.pdf" download="Panchami_Hegde_Resume.pdf" class="btn btn-secondary" title="Download Official Resume PDF">
+              <i class="fa-solid fa-download"></i>
+              <span>Download Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <i class="fa-solid fa-envelope"></i>
+              <span>Get in Touch</span>
+            </a>
+          </div>
+
+          <!-- Social Links -->
+          <div class="hero-socials">
+            <span class="social-label">Connect:</span>
+            <div class="social-links">
+              <a href="https://github.com/Panchamihegde" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub Profile" title="GitHub: Panchamihegde">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/hegdepanchami" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn Profile" title="LinkedIn: Panchami Hegde">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="mailto:panchamihegde0010@gmail.com" class="social-link" aria-label="Email Me" title="Email: panchamihegde0010@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+917045275699" class="social-link" aria-label="Phone Number" title="Phone: +91 7045275699">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Interactive Code Showcase Visual -->
+        <div class="hero-visual">
+          <div class="terminal-card">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="dot red"></span>
+                <span class="dot yellow"></span>
+                <span class="dot green"></span>
+              </div>
+              <div class="terminal-title">developer_profile.py</div>
+              <div class="terminal-badge">Python 3.12</div>
+            </div>
+
+            <div class="terminal-body">
+              <pre><code><span class="code-keyword">class</span> <span class="code-class">PanchamiHegde</span>:
+    <span class="code-keyword">def</span> <span class="code-func">__init__</span>(<span class="code-self">self</span>):
+        <span class="code-self">self</span>.name = <span class="code-string">"Panchami Hegde"</span>
+        <span class="code-self">self</span>.title = <span class="code-string">"Aspiring Software Engineer | Python | AI"</span>
+        <span class="code-self">self</span>.education = <span class="code-string">"B.E. in Computer Engineering (2022–2026)"</span>
+        <span class="code-self">self</span>.college = <span class="code-string">"K.C. College of Engineering, Mumbai Univ."</span>
+        <span class="code-self">self</span>.core_skills = [
+            <span class="code-string">"Python Backend Development"</span>,
+            <span class="code-string">"Artificial Intelligence &amp; Generative AI"</span>,
+            <span class="code-string">"FastAPI, Flask &amp; React"</span>,
+            <span class="code-string">"SQL &amp; Database Architecture"</span>
+        ]
+        <span class="code-self">self</span>.status = <span class="code-string">"Actively Seeking Software Engineer / AI Roles"</span>
+
+    <span class="code-keyword">def</span> <span class="code-func">build_impact</span>(<span class="code-self">self</span>):
+        <span class="code-keyword">return</span> {
+            <span class="code-string">"intelligent_applications"</span>: <span class="code-bool">True</span>,
+            <span class="code-string">"real_world_problem_solving"</span>: <span class="code-bool">True</span>,
+            <span class="code-string">"clean_production_code"</span>: <span class="code-bool">True</span>
+        }
+
+<span class="code-comment"># Initializing engineer profile</span>
+engineer = <span class="code-class">PanchamiHegde</span>()
+<span class="code-func">print</span>(<span class="code-string">f"Status: {engineer.status}"</span>)</code></pre>
+            </div>
+
+            <div class="terminal-footer">
+              <div class="terminal-output">
+                <i class="fa-solid fa-circle-check output-check"></i>
+                <span>Ready for Software Engineering &amp; AI Roles | 0 Errors</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Accent Stats Card -->
+          <div class="floating-stat-card stat-1">
+            <div class="stat-icon"><i class="fa-brands fa-python"></i></div>
+            <div class="stat-info">
+              <span class="stat-title">Core Focus</span>
+              <span class="stat-value">Python &amp; AI Engineering</span>
+            </div>
+          </div>
+
+          <div class="floating-stat-card stat-2">
+            <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="stat-info">
+              <span class="stat-title">Education</span>
+              <span class="stat-value">B.E. Comp Eng (2022–2026)</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About Section">
+        <span class="mouse">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Get To Know Me</span>
+          <h2 class="section-title">About <span class="text-highlight">Me</span></h2>
+          <p class="section-subtitle">Bridging computer engineering foundations with practical AI, backend systems, and modern web development.</p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left: Profile & Graphic Card -->
+          <div class="about-card-left">
+            <div class="profile-card">
+              <div class="profile-avatar-wrap">
+                <img src="assets/images/profile.jpg" alt="Panchami Hegde Profile Photo" class="profile-avatar-img" onerror="this.onerror=null; this.src='assets/images/profile-avatar.svg';" />
+                <div class="avatar-ring"></div>
+              </div>
+              <div class="profile-details text-center">
+                <h3 class="profile-name">Panchami Hegde</h3>
+                <p class="profile-tagline">Aspiring Software Engineer | Python | AI</p>
+                <div class="profile-badge-list">
+                  <span class="badge"><i class="fa-solid fa-location-dot"></i> India (Open to Relocation &amp; Remote)</span>
+                  <span class="badge"><i class="fa-solid fa-graduation-cap"></i> K.C. College of Engineering (2022–2026)</span>
+                </div>
+              </div>
+
+              <!-- Quick Facts Box -->
+              <div class="quick-facts">
+                <div class="fact-item">
+                  <span class="fact-number">3+</span>
+                  <span class="fact-label">Internships</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-number">3</span>
+                  <span class="fact-label">Core Projects</span>
+                </div>
+                <div class="fact-item">
+                  <span class="fact-number">1</span>
+                  <span class="fact-label">Research Paper</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Narrative & Competencies -->
+          <div class="about-card-right">
+            <h3 class="about-heading">
+              Passionate about building intelligent applications and scalable backend systems.
+            </h3>
+            
+            <p class="about-text">
+              I am a final-year <strong>Computer Engineering student</strong> at <strong>K.C. College of Engineering, Mumbai University</strong> (2022–2026) 
+              with a strong technical focus on <strong>Python Development</strong>, <strong>Artificial Intelligence</strong>, <strong>SQL</strong>, and <strong>Web Development</strong>. 
+              My engineering education has provided me with a rigorous foundation in algorithms, data structures, database architectures, and systems engineering.
+            </p>
+
+            <p class="about-text">
+              I have hands-on experience designing responsive web applications, developing RESTful APIs with <strong>FastAPI and Flask</strong>, 
+              working with <strong>Generative AI &amp; multi-agent architectures</strong>, and deploying network security IoT systems with <strong>Raspberry Pi</strong>. 
+              I am deeply interested in AI, sustainability, and creating impactful, user-focused solutions that address real-world challenges.
+            </p>
+
+            <!-- Pillar Cards Grid -->
+            <div class="pillars-grid">
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-brands fa-python"></i></div>
+                <div class="pillar-content">
+                  <h4>Python &amp; Backend Development</h4>
+                  <p>Clean OOP design, FastAPI, Flask, asynchronous request handling, and RESTful APIs.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="pillar-content">
+                  <h4>Artificial Intelligence &amp; GenAI</h4>
+                  <p>Generative AI, AI Agents, Hugging Face integration, and intelligent prompt evaluation.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-database"></i></div>
+                <div class="pillar-content">
+                  <h4>Databases &amp; Storage</h4>
+                  <p>Relational database modeling with MySQL &amp; SQL, data extraction, and query optimization.</p>
+                </div>
+              </div>
+
+              <div class="pillar-card">
+                <div class="pillar-icon"><i class="fa-solid fa-code"></i></div>
+                <div class="pillar-content">
+                  <h4>Web &amp; Intelligent Applications</h4>
+                  <p>Responsive frontend design, modern JavaScript (ES6+), React integration, and full-stack workflows.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- About CTAs -->
+            <div class="about-actions">
+              <a href="assets/documents/Panchami_Hegde_Resume.pdf" download="Panchami_Hegde_Resume.pdf" class="btn btn-primary" title="Download Official Resume PDF">
+                <i class="fa-solid fa-download"></i>
+                <span>Download Resume</span>
+              </a>
+              <a href="#contact" class="btn btn-outline">
+                <i class="fa-solid fa-paper-plane"></i>
+                <span>Let's Connect</span>
+              </a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Technical Competencies</span>
+          <h2 class="section-title">My <span class="text-highlight">Skills</span></h2>
+          <p class="section-subtitle">Technical skills organized by domain, reflecting practical project implementations and engineering coursework.</p>
+        </div>
+
+        <div class="skills-grid">
+          
+          <!-- Category 1: Programming Languages -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-code">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h3 class="category-title">Programming</h3>
+            </div>
+            <p class="category-desc">Core languages used for backend logic, algorithm design, and frontend interfaces.</p>
+
+            <div class="skill-tags">
+              <div class="skill-badge highlight"><i class="fa-brands fa-python"></i> <span>Python (Advanced)</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-database"></i> <span>SQL</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-c"></i> <span>C++</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-js"></i> <span>JavaScript (ES6+)</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-html5"></i> <span>HTML5</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-css3-alt"></i> <span>CSS3</span></div>
+            </div>
+          </div>
+
+          <!-- Category 2: AI / Machine Learning -->
+          <div class="skill-category-card highlight-card">
+            <div class="category-header">
+              <div class="category-icon icon-ai">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 class="category-title">AI / Machine Learning</h3>
+            </div>
+            <p class="category-desc">Applied AI architectures, Generative AI models, autonomous agents, and NLP.</p>
+
+            <div class="skill-tags">
+              <div class="skill-badge highlight"><i class="fa-solid fa-robot"></i> <span>Artificial Intelligence</span></div>
+              <div class="skill-badge highlight"><i class="fa-solid fa-network-wired"></i> <span>Machine Learning</span></div>
+              <div class="skill-badge highlight"><i class="fa-solid fa-wand-magic-sparkles"></i> <span>Generative AI</span></div>
+              <div class="skill-badge highlight"><i class="fa-solid fa-users-gear"></i> <span>AI Agents</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-face-smile"></i> <span>Hugging Face</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-file-lines"></i> <span>NLP / Text Extraction</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-terminal"></i> <span>Prompt Engineering</span></div>
+            </div>
+          </div>
+
+          <!-- Category 3: Web Development -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-web">
+                <i class="fa-solid fa-server"></i>
+              </div>
+              <h3 class="category-title">Web Development</h3>
+            </div>
+            <p class="category-desc">Modern Python web frameworks, client-server integrations, and responsive architectures.</p>
+
+            <div class="skill-tags">
+              <div class="skill-badge highlight"><i class="fa-solid fa-bolt"></i> <span>FastAPI</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-flask"></i> <span>Flask</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-react"></i> <span>React (Basics/Integration)</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-route"></i> <span>RESTful APIs</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-mobile-screen"></i> <span>Responsive UI Design</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-gears"></i> <span>Backend Systems Integration</span></div>
+            </div>
+          </div>
+
+          <!-- Category 4: Libraries -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-lib">
+                <i class="fa-solid fa-cubes"></i>
+              </div>
+              <h3 class="category-title">Libraries</h3>
+            </div>
+            <p class="category-desc">Specialized Python libraries for document processing, data analytics, and automation.</p>
+
+            <div class="skill-tags">
+              <div class="skill-badge"><i class="fa-solid fa-file-pdf"></i> <span>PyPDF2</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-table"></i> <span>Pandas</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-calculator"></i> <span>NumPy</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-chart-line"></i> <span>Scikit-Learn</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-chart-pie"></i> <span>Matplotlib</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-spider"></i> <span>BeautifulSoup</span></div>
+            </div>
+          </div>
+
+          <!-- Category 5: Databases -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-db">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="category-title">Databases</h3>
+            </div>
+            <p class="category-desc">Relational database systems, relational schema design, and query management.</p>
+
+            <div class="skill-tags">
+              <div class="skill-badge highlight"><i class="fa-solid fa-database"></i> <span>MySQL</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-table-cells"></i> <span>SQL Queries</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-server"></i> <span>SQLite</span></div>
+            </div>
+          </div>
+
+          <!-- Category 6: Tools & Platforms -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-tools">
+                <i class="fa-solid fa-toolbox"></i>
+              </div>
+              <h3 class="category-title">Tools &amp; Platforms</h3>
+            </div>
+            <p class="category-desc">Developer toolchain, version control, edge hardware, and analytics software.</p>
+
+            <div class="skill-tags">
+              <div class="skill-badge"><i class="fa-brands fa-git-alt"></i> <span>Git</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-github"></i> <span>GitHub</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-code"></i> <span>VS Code</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-vial"></i> <span>Postman</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-microchip"></i> <span>Raspberry Pi</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-chart-simple"></i> <span>Power BI</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-file-excel"></i> <span>Microsoft Excel</span></div>
+              <div class="skill-badge"><i class="fa-brands fa-linux"></i> <span>Linux / Bash</span></div>
+            </div>
+          </div>
+
+          <!-- Category 7: Core Concepts -->
+          <div class="skill-category-card">
+            <div class="category-header">
+              <div class="category-icon icon-core">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <h3 class="category-title">Core Concepts</h3>
+            </div>
+            <p class="category-desc">Academic Computer Engineering fundamentals and algorithmic methodologies.</p>
+
+            <div class="skill-tags">
+              <div class="skill-badge"><i class="fa-solid fa-check-circle"></i> <span>Data Structures &amp; Algorithms (DSA)</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-check-circle"></i> <span>Object-Oriented Programming (OOP)</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-check-circle"></i> <span>Database Management Systems (DBMS)</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-check-circle"></i> <span>Operating Systems</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-check-circle"></i> <span>Computer Networks</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-check-circle"></i> <span>ATS Scoring Algorithms</span></div>
+              <div class="skill-badge"><i class="fa-solid fa-check-circle"></i> <span>Network Security &amp; Rogue AP Detection</span></div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROFESSIONAL EXPERIENCE SECTION -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Work History</span>
+          <h2 class="section-title">Professional <span class="text-highlight">Experience</span></h2>
+          <p class="section-subtitle">Internships and applied engineering programs in AI, Python programming, and core web development.</p>
+        </div>
+
+        <div class="experience-grid">
+          
+          <!-- Experience 1: Shell-Edunet Foundation -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role-title">AI Intern</h3>
+                <h4 class="exp-company"><i class="fa-solid fa-building"></i> Shell–Edunet Foundation (AICTE Skills4Future Internship)</h4>
+              </div>
+              <span class="exp-date-badge"><i class="fa-regular fa-calendar"></i> Oct 2025 – Nov 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li><i class="fa-solid fa-circle-check"></i> <span>Selected for prestigious AICTE-Shell program on Green Skills through AI.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span>Designed AI-driven prototypes for sustainability challenges.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span>Received mentorship from industry experts.</span></li>
+            </ul>
+          </div>
+
+          <!-- Experience 2: Maincrafts Technology -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role-title">Python Programming Intern</h3>
+                <h4 class="exp-company"><i class="fa-solid fa-building"></i> Maincrafts Technology (Virtual)</h4>
+              </div>
+              <span class="exp-date-badge"><i class="fa-regular fa-calendar"></i> Sep 2025 – Oct 2025</span>
+            </div>
+            <ul class="exp-bullets">
+              <li><i class="fa-solid fa-circle-check"></i> <span>Developed Python-based automation and mini projects.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span>Demonstrated strong coding, debugging, and teamwork skills.</span></li>
+            </ul>
+          </div>
+
+          <!-- Experience 3: CodSoft -->
+          <div class="experience-card">
+            <div class="exp-header">
+              <div>
+                <h3 class="exp-role-title">Web Development Intern</h3>
+                <h4 class="exp-company"><i class="fa-solid fa-building"></i> CodSoft (Virtual)</h4>
+              </div>
+              <span class="exp-date-badge"><i class="fa-regular fa-calendar"></i> Sep 2024</span>
+            </div>
+            <ul class="exp-bullets">
+              <li><i class="fa-solid fa-circle-check"></i> <span>Completed a 4-week internship in core web development.</span></li>
+              <li><i class="fa-solid fa-circle-check"></i> <span>Built real-world frontend projects and demonstrated strong innovation.</span></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION (3 Core Projects) -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Featured Engineering Work</span>
+          <h2 class="section-title">My <span class="text-highlight">Projects</span></h2>
+          <p class="section-subtitle">Real-world implementations spanning AI-driven resume parsing, autonomous interview coaching agents, and IoT wireless security.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects</button>
+          <button class="filter-btn" data-filter="ai">AI &amp; Generative AI</button>
+          <button class="filter-btn" data-filter="python">Python &amp; FastAPI</button>
+          <button class="filter-btn" data-filter="security">IoT &amp; Security</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- PROJECT 1: AI Resume Analyzer & ATS Checker -->
+          <article class="project-card" data-category="ai python">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-resume-analyzer.svg" alt="AI Resume Analyzer & ATS Checker Preview" class="project-img" />
+              <div class="project-overlay">
+                <div class="overlay-buttons">
+                  <a href="https://github.com/Panchamihegde/ResumAI" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="View Source Code on GitHub">
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <button class="btn btn-sm btn-secondary project-detail-trigger" data-project="resumai">
+                    <i class="fa-solid fa-circle-info"></i> Details
+                  </button>
+                </div>
+              </div>
+              <span class="project-badge ai-badge">AI &amp; ATS</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">AI Resume Analyzer &amp; ATS Checker</h3>
+              <p class="project-desc">
+                AI-powered web application that compares resumes against job descriptions, calculates ATS compatibility scores, 
+                detects matched and missing skills, and generates actionable improvement suggestions.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">JavaScript</span>
+                <span class="tech-tag">PyPDF2</span>
+                <span class="tech-tag">REST API</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/Panchamihegde/ResumAI" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Repository">
+                  <i class="fa-brands fa-github"></i> <span>Repository</span>
+                </a>
+                <button class="project-link-btn project-detail-trigger" data-project="resumai">
+                  <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Multi-Agent AI Interview Coach -->
+          <article class="project-card" data-category="ai python">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-interview-coach.svg" alt="Multi-Agent AI Interview Coach Preview" class="project-img" />
+              <div class="project-overlay">
+                <div class="overlay-buttons">
+                  <a href="https://github.com/Panchamihegde" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="View Profile on GitHub">
+                    <i class="fa-brands fa-github"></i> Profile
+                  </a>
+                  <button class="btn btn-sm btn-secondary project-detail-trigger" data-project="interviewcoach">
+                    <i class="fa-solid fa-circle-info"></i> Details
+                  </button>
+                </div>
+              </div>
+              <span class="project-badge agent-badge">AI Agents &amp; React</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">Multi-Agent AI Interview Coach</h3>
+              <p class="project-desc">
+                Personalized interview preparation platform with questions generated from resumes and job descriptions, 
+                evaluating candidate responses in real-time with performance scoring and actionable feedback.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Hugging Face</span>
+                <span class="tech-tag">AI Agents</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/Panchamihegde" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Profile">
+                  <i class="fa-brands fa-github"></i> <span>GitHub</span>
+                </a>
+                <button class="project-link-btn project-detail-trigger" data-project="interviewcoach">
+                  <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: SecureAir – Wi-Fi Honeypot & Rogue AP Detector -->
+          <article class="project-card" data-category="python security">
+            <div class="project-img-wrapper">
+              <img src="assets/images/project-secureair.svg" alt="SecureAir Wi-Fi Honeypot Preview" class="project-img" />
+              <div class="project-overlay">
+                <div class="overlay-buttons">
+                  <a href="https://github.com/Panchamihegde" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" title="View Profile on GitHub">
+                    <i class="fa-brands fa-github"></i> Profile
+                  </a>
+                  <button class="btn btn-sm btn-secondary project-detail-trigger" data-project="secureair">
+                    <i class="fa-solid fa-circle-info"></i> Details
+                  </button>
+                </div>
+              </div>
+              <span class="project-badge iot-badge">IoT &amp; Security</span>
+            </div>
+
+            <div class="project-content">
+              <h3 class="project-title">SecureAir – Wi-Fi Honeypot &amp; Rogue AP Detector</h3>
+              <p class="project-desc">
+                Final year IoT-based security system deployed on Raspberry Pi for real-time rogue Wi-Fi access point detection, 
+                decoy honeypot trapping, live telemetry monitoring dashboard, and network security event visualization.
+              </p>
+
+              <div class="project-tech-stack">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">Raspberry Pi</span>
+                <span class="tech-tag">Network Security</span>
+                <span class="tech-tag">WebSockets</span>
+              </div>
+
+              <div class="project-footer">
+                <a href="https://github.com/Panchamihegde" target="_blank" rel="noopener noreferrer" class="project-link" title="GitHub Profile">
+                  <i class="fa-brands fa-github"></i> <span>GitHub</span>
+                </a>
+                <button class="project-link-btn project-detail-trigger" data-project="secureair">
+                  <span>Learn More</span> <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Projects Bottom CTA -->
+        <div class="projects-cta text-center">
+          <p>Interested in exploring my complete code repositories and open-source contributions?</p>
+          <a href="https://github.com/Panchamihegde" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fa-brands fa-github"></i>
+            <span>Visit GitHub Profile (@Panchamihegde)</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- RESEARCH & PUBLICATIONS SECTION -->
+    <section class="section research-section" id="research">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Publications</span>
+          <h2 class="section-title">Research &amp; <span class="text-highlight">Publications</span></h2>
+          <p class="section-subtitle">Peer-reviewed scholarly contribution focusing on artificial intelligence applications in critical industry sectors.</p>
+        </div>
+
+        <div class="research-grid">
+          <div class="research-card">
+            <div class="research-header">
+              <div class="research-icon">
+                <i class="fa-solid fa-book-bookmark"></i>
+              </div>
+              <div>
+                <h3 class="research-title">"Artificial Intelligence in the Food Industry"</h3>
+                <h4 class="research-journal">
+                  <i class="fa-solid fa-newspaper"></i> International Journal of Innovative Research in Science, Engineering and Technology (IJIRSET)
+                </h4>
+              </div>
+            </div>
+
+            <p class="research-desc">
+              Co-authored a peer-reviewed research paper investigating the emerging integration of Artificial Intelligence, 
+              computer vision, and machine learning techniques within modern food processing, quality verification, 
+              contamination detection, and supply chain logistics optimization.
+            </p>
+
+            <div class="research-meta">
+              <span class="meta-tag highlight"><i class="fa-solid fa-calendar-check"></i> Published: March 2025</span>
+              <span class="meta-tag"><i class="fa-solid fa-hashtag"></i> Vol. 14, Issue 3</span>
+              <span class="meta-tag"><i class="fa-solid fa-users"></i> Co-Author: Panchami Hegde</span>
+              <span class="meta-tag"><i class="fa-solid fa-microscope"></i> Peer-Reviewed Journal</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-tag">Academic Background</span>
+          <h2 class="section-title">My <span class="text-highlight">Education</span></h2>
+          <p class="section-subtitle">Academic qualifications from K.C. College of Engineering (Mumbai University) and verified certifications.</p>
+        </div>
+
+        <div class="education-grid">
+          
+          <!-- Degree Card -->
+          <div class="education-card degree-card">
+            <div class="card-badge">Engineering Degree</div>
+            <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+            <div class="edu-content">
+              <span class="edu-duration">Aug 2022 – Present (Expected 2026)</span>
+              <h3 class="edu-title">Bachelor of Engineering (B.E.) in Computer Engineering</h3>
+              <h4 class="edu-institution">K.C. College of Engineering, Mumbai University</h4>
+              
+              <p class="edu-desc">
+                Four-year engineering degree curriculum establishing strong algorithmic foundations, database design, 
+                systems programming, and intelligent systems engineering.
+              </p>
+
+              <div class="coursework-box">
+                <h5>Relevant Engineering Coursework:</h5>
+                <ul class="coursework-list">
+                  <li><i class="fa-solid fa-check-circle"></i> Data Structures &amp; Algorithms (DSA)</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Object-Oriented Programming (Python, C++)</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Database Management Systems (DBMS &amp; SQL)</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Artificial Intelligence &amp; Machine Learning</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Operating Systems &amp; System Programming</li>
+                  <li><i class="fa-solid fa-check-circle"></i> Computer Networks &amp; Distributed Systems</li>
+                </ul>
+              </div>
+
+              <!-- Prior Education Records from Resume -->
+              <div class="prior-edu-box">
+                <h5>Academic Track Record:</h5>
+                <div class="prior-edu-list">
+                  <div class="prior-item">
+                    <span class="school"><i class="fa-solid fa-school"></i> <strong>HSC</strong> - Maharashtra State Board, Jana Gana Mana College</span>
+                    <span class="year">2022 | Mumbai</span>
+                  </div>
+                  <div class="prior-item">
+                    <span class="school"><i class="fa-solid fa-school"></i> <strong>SSC</strong> - Don Bosco School</span>
+                    <span class="year">2020 | Mumbai</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Certifications & Learning Journey -->
+          <div class="education-card certs-card">
+            <div class="card-badge">Skill Verification</div>
+            <div class="edu-icon"><i class="fa-solid fa-award"></i></div>
+            <div class="edu-content">
+              <span class="edu-duration">Professional Certifications</span>
+              <h3 class="edu-title">Certifications &amp; Training</h3>
+              <h4 class="edu-institution">Continuous Technical Upskilling</h4>
+
+              <div class="cert-items-list">
+                <!-- Cert 1 -->
+                <div class="cert-item">
+                  <div class="cert-bullet"><i class="fa-solid fa-medal"></i></div>
+                  <div class="cert-details">
+                    <h4>The Complete Full-Stack Web Development Bootcamp</h4>
+                    <p>Udemy Certification covering modern full-stack web architectures, frontend-backend integration, databases, and deployment.</p>
+                  </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="cert-item">
+                  <div class="cert-bullet"><i class="fa-solid fa-medal"></i></div>
+                  <div class="cert-details">
+                    <h4>AICTE Skills4Future: Green Skills through AI</h4>
+                    <p>Shell &amp; Edunet Foundation specialization focusing on sustainable problem-solving utilizing Artificial Intelligence models.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Direct Resume Download Card -->
+              <div class="resume-promo-card">
+                <div class="resume-promo-text">
+                  <h5>Official Candidate Resume</h5>
+                  <p>Download the full PDF formatted for recruiters and hiring managers.</p>
+                </div>
+                <a href="assets/documents/Panchami_Hegde_Resume.pdf" download="Panchami_Hegde_Resume.pdf" class="btn btn-sm btn-primary" title="Download Panchami Hegde Resume PDF">
+                  <i class="fa-solid fa-download"></i> Download Resume
+                </a>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        
+        <!-- Contact Hub Card -->
+        <div class="contact-hub-card">
+          
+          <!-- Availability Indicator Badge -->
+          <div class="availability-badge">
+            <span class="status-dot"></span>
+            <span>Open to Opportunities • Full-Time &amp; Internships</span>
+          </div>
+
+          <!-- Section Header -->
+          <div class="section-header text-center contact-hub-header">
+            <span class="section-tag"><i class="fa-solid fa-paper-plane"></i> Get In Touch</span>
+            <h2 class="section-title">Let's <span class="text-highlight">Connect</span></h2>
+            <p class="section-subtitle contact-intro-text">
+              I am actively seeking <strong>Software Engineer</strong>, <strong>Python Developer</strong>, and <strong>AI</strong> entry-level roles. 
+              Whether you are a recruiter with an open position, an engineering leader building high-impact products, or a collaborator with an innovative idea — I would love to hear from you.
+            </p>
+          </div>
+
+          <!-- Prominent Email Spotlight with Copy Option -->
+          <div class="email-spotlight-box">
+            <div class="email-spotlight-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="email-spotlight-info">
+              <span class="email-spotlight-label">Direct Email Address</span>
+              <a href="mailto:panchamihegde0010@gmail.com?subject=Opportunity%20Inquiry%20-%20Panchami%20Hegde" class="email-spotlight-address" title="Email Panchami Hegde">panchamihegde0010@gmail.com</a>
+            </div>
+            <button class="copy-email-action-btn" id="copy-email-btn" title="Copy email address to clipboard" aria-label="Copy email address to clipboard">
+              <i class="fa-regular fa-copy"></i>
+              <span>Copy Email</span>
+            </button>
+          </div>
+
+          <!-- Primary & Social Action Buttons -->
+          <div class="contact-actions-row">
+            <!-- Send Me an Email (Primary Mailto) -->
+            <a href="mailto:panchamihegde0010@gmail.com?subject=Opportunity%20Inquiry%20-%20Panchami%20Hegde" class="btn btn-primary contact-main-btn" title="Open Default Email Application">
+              <i class="fa-solid fa-envelope-open-text"></i>
+              <span>Send Me an Email</span>
+            </a>
+
+            <!-- LinkedIn Profile Button -->
+            <a href="https://www.linkedin.com/in/hegdepanchami" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-social-btn" title="View LinkedIn Profile">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>LinkedIn Profile</span>
+            </a>
+
+            <!-- GitHub Profile Button -->
+            <a href="https://github.com/Panchamihegde" target="_blank" rel="noopener noreferrer" class="btn btn-secondary contact-social-btn" title="View GitHub Profile">
+              <i class="fa-brands fa-github"></i>
+              <span>GitHub Profile</span>
+            </a>
+          </div>
+
+          <!-- Contact Channels & Metadata Grid -->
+          <div class="contact-meta-grid">
+            
+            <!-- Phone Box -->
+            <div class="contact-meta-card">
+              <div class="meta-icon"><i class="fa-solid fa-phone"></i></div>
+              <div class="meta-body">
+                <span class="meta-label">Phone</span>
+                <a href="tel:+917045275699" class="meta-value" title="Call Panchami Hegde">+91 7045275699</a>
+              </div>
+              <button class="copy-btn" id="copy-phone-btn" title="Copy phone number" aria-label="Copy phone number">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+
+            <!-- Location Box -->
+            <div class="contact-meta-card">
+              <div class="meta-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="meta-body">
+                <span class="meta-label">Location</span>
+                <span class="meta-value">India (Open to Relocation &amp; Remote)</span>
+              </div>
+            </div>
+
+            <!-- Resume Download Box -->
+            <div class="contact-meta-card">
+              <div class="meta-icon"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="meta-body">
+                <span class="meta-label">Candidate Resume</span>
+                <span class="meta-value">Panchami_Hegde_Resume.pdf</span>
+              </div>
+              <a href="assets/documents/Panchami_Hegde_Resume.pdf" download="Panchami_Hegde_Resume.pdf" class="external-link-btn" title="Download Official Resume PDF" aria-label="Download Official Resume PDF">
+                <i class="fa-solid fa-download"></i>
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <span class="logo-bracket">&lt;</span>
+            <span class="logo-text">Panchami</span>
+            <span class="logo-accent">.dev</span>
+            <span class="logo-bracket">/&gt;</span>
+          </a>
+          <p class="footer-bio">
+            Panchami Hegde • Aspiring Software Engineer | Python | AI. Final-year Computer Engineering student at K.C. College of Engineering, Mumbai University.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Connect</h4>
+          <ul>
+            <li><a href="https://github.com/Panchamihegde" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/hegdepanchami" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="mailto:panchamihegde0010@gmail.com"><i class="fa-solid fa-envelope"></i> Email</a></li>
+            <li><a href="tel:+917045275699"><i class="fa-solid fa-phone"></i> Phone</a></li>
+            <li><a href="assets/documents/Panchami_Hegde_Resume.pdf" download="Panchami_Hegde_Resume.pdf"><i class="fa-solid fa-file-pdf"></i> Download Resume</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; <span id="current-year">2026</span> Panchami Hegde. All rights reserved.
+        </p>
+        <p class="footer-tagline">
+          Built with HTML5, Modern CSS &amp; Vanilla JavaScript • Fast, Responsive &amp; Recruiter-Ready.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to Top" title="Back to Top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- TOAST NOTIFICATION CONTAINER -->
+  <div id="toast" class="toast" role="alert" aria-live="assertive">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <span id="toast-message" class="toast-message">Notification message</span>
+  </div>
+
+  <!-- PROJECT DETAILS MODAL -->
+  <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" id="modal-backdrop"></div>
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Close modal">&times;</button>
+      <div class="modal-body" id="modal-body">
+        <!-- Content injected dynamically via JavaScript -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>

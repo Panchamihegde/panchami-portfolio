@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume - Panchami Prakash Hegde | Python Developer & AI Engineer</title>
+  <meta name="description" content="Resume of Panchami Prakash Hegde - Computer Engineering Graduate, Python Developer, and AI Engineer." />
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <style>
+    :root {
+      --primary: #0284c7;
+      --primary-dark: #0369a1;
+      --text-dark: #0f172a;
+      --text-muted: #475569;
+      --bg-page: #f1f5f9;
+      --bg-card: #ffffff;
+      --border: #e2e8f0;
+      --font-heading: 'Outfit', sans-serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-page);
+      color: var(--text-dark);
+      line-height: 1.55;
+      padding: 2rem 1rem;
+    }
+
+    /* Floating Action Bar at Top */
+    .action-bar {
+      max-width: 820px;
+      margin: 0 auto 1.5rem auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.65rem 1.25rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .btn-back {
+      background: #ffffff;
+      color: var(--text-dark);
+      border-color: var(--border);
+    }
+    .btn-back:hover {
+      background: #f8fafc;
+      color: var(--primary);
+    }
+
+    .btn-print {
+      background: var(--primary);
+      color: #ffffff;
+    }
+    .btn-print:hover {
+      background: var(--primary-dark);
+    }
+
+    /* Resume Document Container */
+    .resume-paper {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--bg-card);
+      padding: 3rem 3.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+      border: 1px solid var(--border);
+    }
+
+    /* Header */
+    .resume-header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .candidate-name {
+      font-family: var(--font-heading);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+
+    .candidate-role {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 0.75rem;
+    }
+
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .contact-item i {
+      color: var(--primary);
+    }
+    .contact-item a {
+      color: inherit;
+      text-decoration: none;
+    }
+    .contact-item a:hover {
+      color: var(--primary);
+    }
+
+    /* Sections */
+    .resume-section {
+      margin-bottom: 1.6rem;
+    }
+
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--primary-dark);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 0.35rem;
+      margin-bottom: 0.85rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Skills Grid */
+    .skills-block {
+      display: flex;
+      flex-direction: column;
+      gap: 0.45rem;
+      font-size: 0.88rem;
+    }
+
+    .skill-line strong {
+      color: var(--text-dark);
+      min-width: 170px;
+      display: inline-block;
+    }
+
+    /* Experience / Projects Entry */
+    .entry-item {
+      margin-bottom: 1.15rem;
+    }
+
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 0.2rem;
+    }
+
+    .entry-title {
+      font-size: 0.98rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .entry-subtitle {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--primary);
+    }
+
+    .entry-date {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .entry-bullets {
+      list-style-type: disc;
+      padding-left: 1.25rem;
+      margin-top: 0.35rem;
+      font-size: 0.88rem;
+      color: var(--text-muted);
+    }
+
+    .entry-bullets li {
+      margin-bottom: 0.25rem;
+      line-height: 1.5;
+    }
+
+    .entry-bullets strong {
+      color: var(--text-dark);
+    }
+
+    /* Print Styles */
+    @media print {
+      body {
+        background: #ffffff;
+        padding: 0;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .resume-paper {
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        max-width: 100%;
+      }
+      .candidate-name {
+        font-size: 2rem;
+      }
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Floating Action Bar -->
+  <div class="action-bar">
+    <a href="index.html" class="btn btn-back">
+      <i class="fa-solid fa-arrow-left"></i> Back to Portfolio
+    </a>
+    <button onclick="window.print()" class="btn btn-print">
+      <i class="fa-solid fa-print"></i> Print / Save as PDF
+    </button>
+  </div>
+
+  <!-- Printable Resume Paper -->
+  <main class="resume-paper">
+    
+    <!-- Candidate Header -->
+    <header class="resume-header">
+      <h1 class="candidate-name">Panchami Prakash Hegde</h1>
+      <div class="candidate-role">Computer Engineering Graduate | Python Developer & AI Engineer Fresher</div>
+      
+      <div class="contact-row">
+        <div class="contact-item">
+          <i class="fa-solid fa-envelope"></i>
+          <a href="mailto:panchami.hegde@example.com">panchami.hegde@example.com</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-linkedin"></i>
+          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">linkedin.com/in/panchami-hegde</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-brands fa-github"></i>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">github.com/panchami-hegde</a>
+        </div>
+        <div class="contact-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <span>India (Open to Relocation & Remote)</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Professional Summary -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-user"></i> Professional Summary</h2>
+      <p class="section-desc">
+        Detail-oriented Computer Engineering graduate with a solid academic foundation in data structures, algorithms, 
+        and object-oriented architecture. Hands-on experience developing scalable Python backends with FastAPI and Flask, 
+        designing machine learning and computer vision workflows with PyTorch and Scikit-Learn, and building Retrieval-Augmented 
+        Generation (RAG) applications. Eager to contribute technical proficiency, fast-learning agility, and engineering 
+        discipline to high-impact Python Developer or AI Engineer fresher roles.
+      </p>
+    </section>
+
+    <!-- Technical Skills -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-gears"></i> Technical Skills</h2>
+      <div class="skills-block">
+        <div class="skill-line">
+          <strong>Programming Languages:</strong> Python (Core, OOP, Asyncio), C++, SQL, JavaScript (ES6+), HTML5, CSS3
+        </div>
+        <div class="skill-line">
+          <strong>AI & Machine Learning:</strong> PyTorch, Scikit-learn, OpenCV, Hugging Face Transformers, LangChain, RAG, Pandas, NumPy, NLP
+        </div>
+        <div class="skill-line">
+          <strong>Frameworks & Backend:</strong> FastAPI, Flask, Django, RESTful API Architecture, Pydantic, SQLAlchemy, Streamlit
+        </div>
+        <div class="skill-line">
+          <strong>Databases & Storage:</strong> PostgreSQL, MySQL, SQLite, ChromaDB (Vector Store)
+        </div>
+        <div class="skill-line">
+          <strong>Developer Tools:</strong> Git, GitHub, Docker (Basics), Postman, Linux / Bash, VS Code, Pytest
+        </div>
+        <div class="skill-line">
+          <strong>Core CS Foundations:</strong> Data Structures & Algorithms (DSA), OOP Design, Operating Systems, DBMS, Computer Networks
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Featured Technical Projects</h2>
+      
+      <!-- Project 1 -->
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">DocuMind AI — Intelligent RAG Document Q&A System</span>
+          <span class="entry-date">LangChain, FastAPI, ChromaDB, HuggingFace</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Architected a Retrieval-Augmented Generation (RAG) pipeline parsing dense technical documents into semantic vector embeddings with ChromaDB and Hugging Face MiniLM.</li>
+          <li>Built asynchronous FastAPI REST endpoints achieving sub-300ms vector similarity lookups with zero hallucinated outputs by anchoring responses to citation source chunks.</li>
+          <li>Created a responsive interactive frontend facilitating instant PDF ingestion and contextual query dialogue.</li>
+        </ul>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">VisionGuard — Real-Time Multi-Class Object Detection</span>
+          <span class="entry-date">Python, YOLOv8, OpenCV, PyTorch, Flask</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Implemented a high-throughput computer vision pipeline using YOLOv8 and OpenCV for real-time video stream analytics and safety equipment verification.</li>
+          <li>Optimized model inference routines to sustain 30+ FPS processing performance with adaptive non-maximum suppression (NMS) and confidence scoring.</li>
+          <li>Constructed automated trigger alerts and spatial occupancy tracking exposed via Flask streaming endpoints.</li>
+        </ul>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">MarketPulse — Automated Financial Sentiment Pipeline</span>
+          <span class="entry-date">Python, Pandas, NLTK, BeautifulSoup, Plotly</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Engineered an automated data extraction and NLP pipeline gathering financial news and sentiment streams via scheduled ingestion jobs.</li>
+          <li>Applied NLTK and VADER polarity scoring to compute continuous sentiment indicators, achieving 88% directional correlation with stock price momentum.</li>
+          <li>Designed an interactive analytics dashboard with Plotly for dynamic time-series correlation visualization.</li>
+        </ul>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">NexusAPI — High-Performance Secure Microservice</span>
+          <span class="entry-date">FastAPI, SQLAlchemy, PostgreSQL, JWT, Docker</span>
+        </div>
+        <ul class="entry-bullets">
+          <li>Engineered production-grade REST API microservices featuring OAuth2 JWT token authentication, password encryption, and role-based permissions.</li>
+          <li>Integrated asynchronous database transactions using Asyncpg and SQLAlchemy ORM, ensuring high concurrency and data integrity.</li>
+          <li>Maintained 95%+ unit test coverage utilizing Pytest and automated interactive documentation through Swagger UI.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h2>
+      <div class="entry-item">
+        <div class="entry-header">
+          <span class="entry-title">Bachelor of Engineering (B.E.) in Computer Engineering</span>
+          <span class="entry-date">Computer Engineering Graduate</span>
+        </div>
+        <div class="entry-subtitle">Core Engineering Curriculum</div>
+        <ul class="entry-bullets">
+          <li><strong>Relevant Coursework:</strong> Data Structures & Algorithms, Object-Oriented Programming, Operating Systems, Database Management Systems (DBMS), Artificial Intelligence, Machine Learning, Computer Networks.</li>
+          <li>Demonstrated strong problem-solving and software development capabilities across multiple academic projects and code labs.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Certifications & Accomplishments -->
+    <section class="resume-section">
+      <h2 class="section-title"><i class="fa-solid fa-award"></i> Certifications & Accomplishments</h2>
+      <ul class="entry-bullets">
+        <li><strong>Python for Data Science & Machine Learning:</strong> Comprehensive mastery of data preprocessing, Scikit-Learn pipelines, and model evaluation.</li>
+        <li><strong>Deep Learning Foundations:</strong> Hands-on specialization in Neural Networks, Convolutional Architectures, and PyTorch workflows.</li>
+        <li><strong>Algorithmic Problem Solving:</strong> Solved 150+ coding problems focusing on Data Structures & Algorithms on LeetCode and HackerRank in Python.</li>
+      </ul>
+    </section>
+
+  </main>
+
+</body>
+</html>

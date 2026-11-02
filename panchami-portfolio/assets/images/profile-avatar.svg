@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="avatarGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#6366f1" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  <!-- Background circle with glow -->
+  <rect width="400" height="400" rx="200" fill="url(#bgGrad)" />
+  <circle cx="200" cy="200" r="190" fill="none" stroke="url(#avatarGrad)" stroke-width="4" opacity="0.6" />
+  
+  <!-- Circuit & Tech nodes pattern -->
+  <g stroke="#38bdf8" stroke-width="1.5" opacity="0.3" fill="none">
+    <path d="M 60,180 L 110,180 L 130,150 L 170,150" />
+    <circle cx="60" cy="180" r="3" fill="#38bdf8" />
+    <circle cx="170" cy="150" r="3" fill="#38bdf8" />
+    
+    <path d="M 340,180 L 290,180 L 270,150 L 230,150" />
+    <circle cx="340" cy="180" r="3" fill="#38bdf8" />
+    <circle cx="230" cy="150" r="3" fill="#38bdf8" />
+
+    <path d="M 90,260 L 130,260 L 150,290" />
+    <circle cx="90" cy="260" r="3" fill="#6366f1" />
+    
+    <path d="M 310,260 L 270,260 L 250,290" />
+    <circle cx="310" cy="260" r="3" fill="#6366f1" />
+  </g>
+
+  <!-- Stylized Tech Professional Figure -->
+  <g id="figure">
+    <!-- Outer aura -->
+    <circle cx="200" cy="155" r="56" fill="#1e293b" stroke="url(#avatarGrad)" stroke-width="3" />
+    <!-- Head silhouette / initials / tech avatar -->
+    <circle cx="200" cy="155" r="48" fill="#334155" />
+    
+    <!-- Stylized hair / face silhouette -->
+    <path d="M 160,155 C 160,115 240,115 240,155 C 240,175 228,195 200,195 C 172,195 160,175 160,155 Z" fill="#475569" />
+    
+    <!-- Gentle facial highlights & tech glasses -->
+    <rect x="175" y="145" width="20" height="12" rx="3" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <rect x="205" y="145" width="20" height="12" rx="3" fill="none" stroke="#38bdf8" stroke-width="2" />
+    <line x1="195" y1="151" x2="205" y2="151" stroke="#38bdf8" stroke-width="2" />
+
+    <!-- Shoulders / Torso with blazer & hoodie style -->
+    <path d="M 120,330 C 120,250 150,225 200,225 C 250,225 280,250 280,330 Z" fill="#1e293b" />
+    <path d="M 145,330 L 180,240 L 200,280 L 220,240 L 255,330 Z" fill="#38bdf8" opacity="0.15" />
+    <path d="M 175,250 L 200,290 L 225,250" fill="none" stroke="#38bdf8" stroke-width="2" />
+  </g>
+
+  <!-- Python & AI floating badge badges -->
+  <g transform="translate(65, 90)">
+    <rect width="68" height="28" rx="14" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5" />
+    <text x="34" y="18" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">🐍 Python</text>
+  </g>
+  <g transform="translate(265, 90)">
+    <rect width="68" height="28" rx="14" fill="#0f172a" stroke="#a855f7" stroke-width="1.5" />
+    <text x="34" y="18" fill="#c084fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">🧠 AI / ML</text>
+  </g>
+  <g transform="translate(145, 335)">
+    <rect width="110" height="30" rx="15" fill="#0f172a" stroke="#10b981" stroke-width="1.5" />
+    <text x="55" y="19" fill="#34d399" font-family="system-ui, sans-serif" font-size="11" font-weight="700" text-anchor="middle">⚡ Computer Eng.</text>
+  </g>
+</svg>
